@@ -1,3 +1,4 @@
+
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.HashSet;
@@ -12,9 +13,11 @@ import java.util.List;
 
 
 
+
 public class RecipeParser {
 
-    private String urlToSearch;
+    
+
     private Set<String> baseRecipeLinks;
 
     public RecipeParser () {
@@ -27,9 +30,8 @@ public class RecipeParser {
 
     public void setUrlToSearch (String newUrl) {
 
-        urlToSearch = newUrl;
 
-    }
+
 
     public String getUrlToSearch () {
 
@@ -72,7 +74,9 @@ public class RecipeParser {
         //FIXME: method that takes in a recipeURL ,derived from a list of recipes, and parse
         // the ingredients. returns an List<> of ingredients to a Recipe object
         return placeHolder;
+
     }
+
 
 
 
