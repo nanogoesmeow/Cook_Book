@@ -1,20 +1,25 @@
+
+import java.io.File;
 import java.io.IOException;
+
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void createMasterRecipe() throws IOException {
+        File masterRecipeCollection = new File("masterRecipeCollection.txt");
+        masterRecipeCollection.createNewFile();
 
 
-        RecipeParser tasteofHome = new RecipeParser();
-
-        tasteofHome.setNewUrl("https://www.tasteofhome.com/collection/tasty-low-carb-dinner-ideas/");
-
-        tasteofHome.parseRecipe();
-
-        tasteofHome.printListUrl();
+    }
 
 
 
+    public static void main(String [] args) throws IOException {
+
+        // createMasterRecipe();
+
+        ConsoleInterface console = new ConsoleInterface();
+        console.start();
 
 
     }
